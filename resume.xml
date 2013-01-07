@@ -25,7 +25,11 @@
     <skill>Ruby on Rails</skill>
     <skill>Java</skill>
     <skill>Design and Analysis</skill>
+<<<<<<< HEAD
     <skill>PHP</skill>
+=======
+    <skill>Android</skill>
+>>>>>>> origin/gh-pages
     <skill>Javascript</skill>
     <skill>XML</skill>
     <skill>SQL</skill>
@@ -41,6 +45,15 @@
             <year>2012</year>
           </date>
         </start>
+<<<<<<< HEAD
+=======
+        <end>
+         <date>
+            <month>July</month>
+            <year>2012</year>
+         </date>
+        </end> 
+>>>>>>> origin/gh-pages
         <task>Adapting a department iPhone application for the Android environment</task>
         <description></description>
       </employer>
@@ -300,7 +313,11 @@
         <description></description>
       </class>
       </cert>
+<<<<<<< HEAD
       <cert date="12/21/2012" name="Certificate: Java Professional Developer">
+=======
+      <cert date="6/15/2012" name="Certificate: Java Professional Developer">
+>>>>>>> origin/gh-pages
         <description>This certificate prepares the student for developing enterprise web applications with the Java language</description>
         <class grade="A" credits="3">
           <name>Introduction to Java Programming</name>
