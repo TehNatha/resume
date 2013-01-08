@@ -83,7 +83,7 @@
     <location>
       <school>Madison College</school>
       <address>
-          <street>3550 Anderson St.</street>
+          <street>1701 Wright St.</street>
           <city>Madison</city>
           <state>WI</state>
         <zip>53704</zip>
@@ -296,7 +296,7 @@
         </class>
       </cert>
       <cert date="07/29/2011" name="Certificate: PHP Professional Developer">
-        <description></description>
+        <description>Projects include development of websites using various PHP frameworks including CakePHP and Drupal</description>
       <class grade="A" credits="3">
         <name>PHP Development with MySQL</name>
         <description></description>
