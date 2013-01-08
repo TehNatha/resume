@@ -17,8 +17,8 @@
         <contact type="email">Hire@NathanStier.com</contact>
         <contact type="website">http://www.NathanStier.com</contact>
         <qr>bitly.com/nCfldD</qr>
-        <objective>Student developer with 75 credit hours of study seeks challenging and enriching entry into a developer career</objective>
-        <bio>An enthusiastic and curious student developer with a broad education in multiple computer programming languages and development platforms is ready to use the right tools for the right jobs.</bio>
+        <objective>Recent graduate of Madison College finishing second degree looking for challenging and enriching project</objective>
+        <bio>An enthusiastic and curious software developer with a broad education in multiple computer programming languages and development platforms.</bio>
   </person>
   <skills>
     <skill>Objective-C</skill>
@@ -47,7 +47,7 @@
             <year>2012</year>
          </date>
         </end>
-        <task>Adapting a department iPhone application for the Android environment</task>
+        <task>Developed an prototype informational application in native Android, presenting live information from the Continuing Education departments website</task>
         <description></description>
       </employer>
     <employer>
@@ -90,8 +90,8 @@
       </address>
     </location>
     <goals>
-      <cert date="12/15/2012" name="Associates: Analyst/Programmer Mobile Developer">
-         <description>This program prepares students with the skills for entry level positions developing applications for Android or iOS</description>
+      <cert date="12/20/2013" name="Associates: Analyst/Programmer Mobile Developer">
+         <description>Projects include developing applications in Android and iOS environments as well as server side support in Java or PHP</description>
          <class grade="BC" credits="1">
             <name>Careers in IT</name>
             <description></description>
@@ -181,8 +181,8 @@
             <description></description>
           </class>
       </cert>
-      <cert date="12/15/2012" name="Associates: Web Analyst/Programmer">
-        <description>This program prepares students with the skills for entry level developer positions</description>
+      <cert date="12/20/2012" name="Associates: Web Analyst/Programmer">
+        <description>Projects include AJAX based web applications as well as Java and Ruby on Rails server implementations</description>
         <class grade="BC" credits="1">
           <name>Careers in IT</name>
           <description></description>
@@ -255,7 +255,7 @@
           <name>Advanced Java Programming</name>
           <description></description>
         </class>
-        <class grade="U" credits="3">
+        <class grade="AB" credits="3">
           <name>Database Design and Data Warehousing</name>
           <description></description>
         </class>
@@ -277,7 +277,7 @@
         </class>
       </cert>
       <cert date="07/29/2011" name="Certificate: LAMP Open Source Development">
-          <description>This certificate provides extensive training with web application development in open source platforms such as LAMP and Ruby on Rails</description>
+          <description>Projects include creating web applications in Ruby on Rails and PHP as well as maintaining a Linux server</description>
         <class grade="A" credits="3">
           <name>Linux Server</name>
           <description></description>
@@ -296,7 +296,7 @@
         </class>
       </cert>
       <cert date="07/29/2011" name="Certificate: PHP Professional Developer">
-        <description>This certificate provides training in PHP and its various platforms and frameworks</description>
+        <description></description>
       <class grade="A" credits="3">
         <name>PHP Development with MySQL</name>
         <description></description>
@@ -306,8 +306,8 @@
         <description></description>
       </class>
       </cert>
-      <cert date="6/15/2012" name="Certificate: Java Professional Developer">
-        <description>This certificate prepares the student for developing enterprise web applications with the Java language</description>
+      <cert date="12/20/2013" name="Certificate: Java Professional Developer">
+        <description>Projects incude RESTful server implementations in Java and Java testing, as well as a token parser</description>
         <class grade="A" credits="3">
           <name>Introduction to Java Programming</name>
           <description></description>
@@ -322,7 +322,7 @@
         </class>
       </cert>
       <cert date="05/18/2012" name="Certificate: iPhone Applications Developer">
-        <description>This certificate prepares students for developing Objective-C applications for iOS devices</description>
+        <description>Projects include the use of animation and drawing frameworks, as well as server integration</description>
         <class grade="A" credits="3">
           <name>iPhone Apps Development</name>
           <description></description>
@@ -333,7 +333,7 @@
         </class>
       </cert>
       <cert date="08/24/2012" name="Certificate: Android Applications Developer">
-        <description>This certificate prepares students for developing applications for Android devices</description>
+        <description>Projects include basic interface elements, file manipulation, server integration, and Javascript based applications</description>
         <class grade="B" credits="3">
           <name>Android Applications Development</name>
           <description></description>
