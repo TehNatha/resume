@@ -121,9 +121,7 @@
           <xsl:apply-templates select="end" />
         </xsl:if>
       </div>
-      <p>
-        <xsl:value-of select="task" />
-      </p>
+      <xsl:apply-templates select="tasks" />
     </div>
   </xsl:template>
   
@@ -169,6 +167,16 @@
         <xsl:value-of select="description" />
       </p>
     </div>
+  </xsl:template>
+
+  <xsl:template match="tasks">
+    <xsl:apply-templates select="task" />
+  </xsl:template>
+
+  <xsl:template match="task">
+    <p>
+      <xsl:value-of select="." />
+    </p>
   </xsl:template>
   
   <xsl:template match="associations">

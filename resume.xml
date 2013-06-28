@@ -2,23 +2,23 @@
 <?xml-stylesheet type="text/xsl" href="stylesheets/resume.xsl"?>
 <resume>
   <person>
-        <name>
-            <firstName>Nathan</firstName>
-            <middleInitial>C</middleInitial>
-            <lastName>Stier</lastName>
-        </name>
-        <address>
-            <street>81 Lakewood Gardens Lane</street>
-            <city>Madison</city>
-            <state>WI</state>
-            <zip>53704</zip>
-        </address>
-        <contact type="phone">(608)448-6283</contact>
-        <contact type="email">Hire@NathanStier.com</contact>
-        <contact type="website">http://www.NathanStier.com</contact>
-        <qr>bitly.com/nCfldD</qr>
-        <objective>Recent graduate of Madison College finishing second degree looking for challenging and enriching project</objective>
-        <bio>An enthusiastic and curious software developer with a broad education in multiple computer programming languages and development platforms.</bio>
+    <name>
+        <firstName>Nathan</firstName>
+        <middleInitial>C</middleInitial>
+        <lastName>Stier</lastName>
+    </name>
+    <address>
+      <street>81 Lakewood Gardens Lane</street>
+      <city>Madison</city>
+      <state>WI</state>
+      <zip>53704</zip>
+    </address>
+    <contact type="phone">(608)448-6283</contact>
+    <contact type="email">Hire@NathanStier.com</contact>
+    <contact type="website">http://www.NathanStier.com</contact>
+    <qr>bitly.com/nCfldD</qr>
+    <objective>Graduate of Madison College finishing second degree looking for an enriching project</objective>
+    <bio>Self driven and curious developer with a broad education in multiple computer programming languages and platforms.</bio>
   </person>
   <skills>
     <skill>Objective-C</skill>
@@ -32,52 +32,57 @@
     <skill>Technical Reporting</skill>
   </skills>
   <employers>
-     <employer>
-        <name>Madison College Continuing Education</name>
-        <position>Student Help</position>
-        <start>
-          <date>
-            <month>January</month>
-            <year>2012</year>
-          </date>
-        </start>
-        <end>
-         <date>
-            <month>July</month>
-            <year>2012</year>
-         </date>
-        </end>
-        <task>Developed an prototype informational application in native Android, presenting live information from the Continuing Education departments website</task>
-        <description></description>
-      </employer>
     <employer>
-      <name>Pitney Bowes</name>
-      <position>Customer Service Associate</position>
-      <start><date>
-         <month>May</month>
-         <year>2005</year>
-      </date></start>
-      <end><date>
-         <month>Jan</month>
-         <year>2012</year>
-      </date></end>
-      <task>Served on site customers in providing shipping and delivery solutions</task>
+      <name>TrafficCast</name>
+      <position>Software Engineer</position>
+      <start>
+        <date>
+          <month>January</month>
+          <year>2013</year>
+        </date>
+      </start>
+      <end>
+       <date>
+          <month></month>
+          <year></year>
+       </date>
+      </end>
+      <tasks>
+        <task>
+          Maintained web scrappers that capture live road contruction and incident data.
+        </task>
+        <task>
+          Developed API consumer to collect previously uncaptured updates from users of our software.
+        </task>
+        <task>
+          Developed reader consume live GPS data and handle 1 million database inserts every other half-second.
+        </task>
+      </tasks>
       <description></description>
     </employer>
     <employer>
-          <name>The Home Depot</name>
-          <position>Head Cashier/Lot Technician</position>
-          <start><date>
-              <month>Apr</month>
-              <year>2003</year>
-          </date></start>
-          <end><date>
-              <month>Feb</month>
-              <year>2005</year>
-          </date></end>
-          <task>Managed customer experience at point of sale by assisting cashiers and troubleshooting front end logistics issues</task>
-          <description></description>
+      <name>Madison College Continuing Education</name>
+      <position>Student Help</position>
+      <start>
+        <date>
+          <month>January</month>
+          <year>2012</year>
+        </date>
+      </start>
+      <end>
+       <date>
+          <month>July</month>
+          <year>2012</year>
+       </date>
+      </end>
+      <tasks>
+        <task>
+          Developed a native Android prototype appto present the department webpage to students.
+        </task>
+      </tasks>
+      <description></description>
     </employer>
+    
   </employers>
   <education>
     <location>
@@ -359,6 +364,10 @@
      <award>
         <name>Dean's list - High Honor's</name>
         <description>Fall 2011, Spring 2012</description>
+     </award>
+     <award>
+      <name>Madison College Challenge Finalist</name>
+      <description>Business plan competition for students and alumni of MATC</description>
      </award>
   </awards>
 </resume>
