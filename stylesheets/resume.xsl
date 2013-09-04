@@ -4,8 +4,206 @@
   <xsl:template match="/">
     <html>
       <head>
-        <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" />
-        <link rel="stylesheet" type="text/css" href="stylesheets/resume.css" />
+        <style>
+          /* http://meyerweb.com/eric/tools/css/reset/ 
+             v2.0 | 20110126
+             License: none (public domain)
+          */
+
+          html, body, div, span, applet, object, iframe,
+          h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+          a, abbr, acronym, address, big, cite, code,
+          del, dfn, em, img, ins, kbd, q, s, samp,
+          small, strike, strong, sub, sup, tt, var,
+          b, u, i, center,
+          dl, dt, dd, ol, ul, li,
+          fieldset, form, label, legend,
+          table, caption, tbody, tfoot, thead, tr, th, td,
+          article, aside, canvas, details, embed, 
+          figure, figcaption, footer, header, hgroup, 
+          menu, nav, output, ruby, section, summary,
+          time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+          }
+          /* HTML5 display-role reset for older browsers */
+          article, aside, details, figcaption, figure, 
+          footer, header, hgroup, menu, nav, section {
+            display: block;
+          }
+          body {
+            line-height: 1;
+          }
+          ol, ul {
+            list-style: none;
+          }
+          blockquote, q {
+            quotes: none;
+          }
+          blockquote:before, blockquote:after,
+          q:before, q:after {
+            content: '';
+            content: none;
+          }
+          table {
+            border-collapse: collapse;
+            border-spacing: 0;
+          }
+        </style>
+        <style>
+          body {
+            margin-top:2px;
+            text-align: center;
+            font-family: Helvetica;
+            font-size: .8em;
+          }
+
+          body > div {
+            text-align: left;
+            margin: 0 auto;
+            width: 650px;
+          }
+
+          img {
+            float: right;
+            vertical-align: bottom;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border: solid black .5px;
+          }
+
+          h1 {
+              font-size: 1em;
+          }
+
+          #name {
+            font-size: 1.50em;
+          }
+
+          .contact {
+              margin: 2px;
+          }
+
+          .contact > h1 {
+            display: inline;
+          }
+
+          section {
+            margin: 7px;
+            clear: all;
+          }
+
+          section > h1 {
+            display: block;
+            background: black;
+            color: white;
+            margin-left: -15px;
+            padding: .15em;
+          }
+
+          header {
+            margin-left: 10px;
+          }
+
+          section {
+            margin-left: 25px;
+          }
+
+          section > * {
+            margin: 5px;
+          }
+
+          #associations-awards > div {
+              clear: both;
+          }
+
+          #associations-awards > div > * {
+            display: block;
+            margin-bottom: 2px;
+          }
+
+          #associations-awards > div > h1 {
+              float: left;
+          }
+
+          #associations-awards > div > p {
+              text-align: left;
+              float: right;
+          }
+
+          .cert {
+            margin-bottom: 10px;
+          }
+
+          .cert > div {
+            border-bottom: 1px solid black;
+          }
+
+          .cert > div > h1 {
+            width: 400px;
+            display: inline-block;
+          }
+
+          .cert > p {
+              text-align: left;
+              margin-top: 2px;
+            margin-left: 20px;
+          }
+
+          .contact h1 {
+            width: 60px;
+            display: inline-block;
+          }
+
+          .employer {
+            margin-top : 5px;
+            margin-bottom: 12px;
+          }
+
+          .employer > div {
+              margin-bottom: 2px;
+          }
+
+          .employer > div:first-child {
+            border-bottom: 1px solid black;
+          }
+
+          .employer > div:first-child > h1 {
+            display: inline-block;
+            width: 300px;
+            margin-left: 0px;
+          }
+
+          .employer > div > h1 {
+            display: inline-block;
+            width: 50px;
+            margin-left: 20px;
+          }
+
+          .employer > div > .date {
+            display: inline-block;
+            width: 100px;
+          }
+
+          .employer p {
+            margin: 5px;
+          }
+
+          #skills {
+            min-height: 5em;
+          }
+
+          .skill {
+            width: 33%;
+            float: left;
+            display: inline-block;
+          }
+        </style>
       </head>
       <body>
         <div>
