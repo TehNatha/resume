@@ -4,107 +4,155 @@
     "label": "Programmer",
     "picture": "",
     "email": "nathan.stier@gmail.com",
-    "phone": "(912) 555-4321",
-    "website": "http://richardhendricks.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "phone": "(608) 212-8177",
+    "website": "http://nathanstier.com",
+    "summary": "Nathan Stier is mboile and web developer from Madison, WI. He has two Associates Degrees from Madison College, the first in IT - Web Programmer Analyst and the second in IT - Mobile Applications Developer. He corrently works at Madison Newspapers, Inc. developing applications for the iPhone as well as Android. He also does work under Lonely Robot Studio as the developer side of a desinger-developer team. Outside of work he does practices web development using Node.js and Ruby on Rails.\nIn his spare time he can be found dying in Dark Souls, punching wood on my Minecraft server, practicing social dance at Fred Astaire Dance Studio here in Madison, or rolling dice while making spreadsheets in a game of Dungeons and Dragons.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "81 Lakewood Gardens Ln",
+      "postalCode": "53704",
+      "city": "Madison",
+      "countryCode": "WI",
+      "region": "Midwest"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": ""
+        "username": "TehNatha",
+        "url": "http://www.twitter.com/TehNatha"
       },
       {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.com/dandymusicnl"
+        "network": "Facebook",
+        "username": "TehNatha",
+        "url": "http://www.facebook.com/TehNatha"
+      },
+      {
+        "network": "github",
+        "username": "TehNatha",
+        "url": "https://github.com/TehNatha"
       }
+      {
+        "network": "NPM",
+        "username": "TehNatha",
+        "url": "http://www.npmjs.org/~tehnatha"
+      },
+      {
+        "network": "Instagram",
+        "username": "TehNatha",
+        "url": "http://www.instagram.com/TehNatha"
+      },
+      {
+        "network": "Twitter",
+        "username": "TehNatha",
+        "url": "http://www.twitter.com/TehNatha"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "NathanStier",
+        "url": "http://www.linkedin.com/in/nathanstier"
+      },
+      {
+        "network": "About.me",
+        "username": "TehNatha",
+        "url": "http://about.me/TehNatha"
+      },
     ]
   },
   "work": [
     {
-      "company": "Pied Piper",
-      "position": "CEO/President",
-      "website": "http://piedpiper.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "company": "Madison Newspapers, Inc.",
+      "position": "Mobile Developer",
+      "website": "http://madison.com",
+      "startDate": "2013-10-30",
+      "endDate": "",
+      "summary": "Developed and troubleshot applications for both Android and iOS.",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Created a Jenkins based Continuous Deployment system for 50 properties over 2 platforms.",
+        "Trained peers in GIT best practices.",
+        "Revised code using Twitter search API 1.0 to use Twitter stream api 1.1."
       ]
-    }
-  ],
-  "volunteer": [
+    },
     {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "http://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
+      "company": "TrafficCast",
+      "position": "Software Engineer",
+      "website": "http://trafficcast.com",
+      "startDate": "2013-01",
+      "endDate": "2013-08",
+      "summary": "Developed web scrubbers to retrieve real time traffic data from government and company sites.",
       "highlights": [
-        "Awarded 'Teacher of the Month'"
+        "Created a service that took in 1 million data points in provided in a 15 minute window in real time."
+        ]
+    },
+    {
+      "company": "Lonely Robot Studio, LLC.",
+      "position": "Co-Founder",
+      "website": "http://lonelyrobotstudio.com",
+      "startDate": "2014-01-01",
+      "endDate": "",
+      "summary": "Work on freelance and independent projects as the developer in a designer-developer team.",
+      "highlights": [
+        "Created a coffescript based fixture and factory solution based on plain old Javascript objects and reduce algorithms."
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
-  "awards": [
+      "institution": "Madison College",
+      "area": "IT - Web Programmer/Analyst",
+      "studyType": "Associate",
+      "endDate": "2012-12-21",
+      "gpa": "3.2",
+    },
     {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "institution": "Madison College",
+      "area": "IT - Mobile Application Developer",
+      "studyType": "Associate",
+      "endDate": "2013-12-21",
+      "gpa": "3.2",
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
+      "name": "Full-Stack Web Development",
+      "level": "Expert",
       "keywords": [
         "HTML",
         "CSS",
-        "Javascript"
+        "JSON",
+        "Javascript",
+        "Coffeescript",
+        "Node.js",
+        "Ruby on Rails"
       ]
     },
     {
-      "name": "Compression",
-      "level": "Master",
+      "name": "Mobile Development",
+      "level": "Expert",
       "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "Swift",
+        "Objective-C",
+        "Android"
+      ]
+    },
+    {
+      "name": "Testing",
+      "level": "Intermediate",
+      "keywords": [
+        "RSpec",
+        "Mocha",
+        "Jasmine"
+      ]
+    },
+    {
+      "name": "Developmet Tools",
+      "level": "Expert",
+      "keywords": [
+        "Git",
+        "XCode",
+        "Jenkins",
+        "Android Studio"
       ]
     }
+
   ],
   "languages": [
     {
@@ -114,17 +162,26 @@
   ],
   "interests": [
     {
-      "name": "Wildlife",
+      "name": "Video Games",
       "keywords": [
-        "Ferrets",
-        "Unicorns"
+        "Dark Souls",
+        "Minecraft"
       ]
-    }
-  ],
-  "references": [
+    },
     {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+      "name": "Pen & Paper RPGs",
+      "keywords": [
+        "Dungeons & Dragons",
+        "Pathfinder"
+      ]
+    },
+    {
+      "name": "Social Dance",
+      "keywords": [
+        "Rumba",
+        "Swing",
+        "Foxtrot"
+      ]
     }
   ]
 }
