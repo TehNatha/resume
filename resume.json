@@ -29,7 +29,7 @@
         "network": "github",
         "username": "TehNatha",
         "url": "https://github.com/TehNatha"
-      }
+      },
       {
         "network": "NPM",
         "username": "TehNatha",
@@ -54,7 +54,7 @@
         "network": "About.me",
         "username": "TehNatha",
         "url": "http://about.me/TehNatha"
-      },
+      }
     ]
   },
   "work": [
@@ -100,14 +100,14 @@
       "area": "IT - Web Programmer/Analyst",
       "studyType": "Associate",
       "endDate": "2012-12-21",
-      "gpa": "3.2",
+      "gpa": "3.2"
     },
     {
       "institution": "Madison College",
       "area": "IT - Mobile Application Developer",
       "studyType": "Associate",
       "endDate": "2013-12-21",
-      "gpa": "3.2",
+      "gpa": "3.2"
     }
   ],
   "skills": [
