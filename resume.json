@@ -63,7 +63,6 @@
       "position": "Mobile Developer",
       "website": "http://madison.com",
       "startDate": "2013-10-30",
-      "endDate": "",
       "summary": "Developed and troubleshot applications for both Android and iOS.",
       "highlights": [
         "Created a Jenkins based Continuous Deployment system for 50 properties over 2 platforms.",
@@ -75,8 +74,8 @@
       "company": "TrafficCast",
       "position": "Software Engineer",
       "website": "http://trafficcast.com",
-      "startDate": "2013-01",
-      "endDate": "2013-08",
+      "startDate": "2013-01-27",
+      "endDate": "2013-08-18",
       "summary": "Developed web scrubbers to retrieve real time traffic data from government and company sites.",
       "highlights": [
         "Created a service that took in 1 million data points in provided in a 15 minute window in real time."
@@ -87,7 +86,6 @@
       "position": "Co-Founder",
       "website": "http://lonelyrobotstudio.com",
       "startDate": "2014-01-01",
-      "endDate": "",
       "summary": "Work on freelance and independent projects as the developer in a designer-developer team.",
       "highlights": [
         "Created a coffescript based fixture and factory solution based on plain old Javascript objects and reduce algorithms."
