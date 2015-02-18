@@ -6,7 +6,7 @@
     "email": "nathan.stier@gmail.com",
     "phone": "(608) 212-8177",
     "website": "http://nathanstier.com",
-    "summary": "Nathan Stier is mobile and web developer from Madison, WI. He has two Associates Degrees from Madison College, the first in IT - Web Programmer Analyst and the second in IT - Mobile Applications Developer. He corrently works at Madison Newspapers, Inc. developing applications for the iPhone as well as Android. He also does work under Lonely Robot Studio as the developer side of a desinger-developer team. Outside of work he practices web development using Node.js and Ruby on Rails.\nIn his spare time he can be found dying in Dark Souls, punching wood on my Minecraft server, practicing social dance at Fred Astaire Dance Studio here in Madison, or rolling dice while making spreadsheets in a game of Dungeons and Dragons.",
+    "summary": "Nathan Stier is a mobile and web developer from Madison, WI. He has two Associates Degrees from Madison College: IT - Web Programmer Analyst and IT - Mobile Applications Developer. He currently works at Madison Newspapers, Inc. developing applications for the iPhone as well as Android. He also does work under Lonely Robot Studio as the developer side of a designer-developer team. Outside of work he practices web development using Node.js and Ruby on Rails.\nIn his spare time he can be found dying in Dark Souls, punching wood on his Minecraft server, practicing social dance at Fred Astaire Dance Studio in Madison, or rolling dice while making spreadsheets in a game of Dungeons and Dragons.",
     "location": {
       "address": "81 Lakewood Gardens Ln",
       "postalCode": "53704",
@@ -63,9 +63,9 @@
       "position": "Mobile Developer",
       "website": "http://madison.com",
       "startDate": "2013-10-30",
-      "summary": "Developed and troubleshot applications for both Android and iOS.",
+      "summary": "Develops and maintains applications for both Android and iOS.",
       "highlights": [
-        "Created a Jenkins based Continuous Deployment system for 50 properties over 2 platforms.",
+        "Created a Jenkins-based Continuous Deployment system for 50 properties over 2 platforms.",
         "Trained peers in GIT best practices.",
         "Implemented Android code for a migration from Flurry to Google Analytics."
       ]
@@ -86,9 +86,9 @@
       "position": "Co-Founder",
       "website": "http://lonelyrobotstudio.com",
       "startDate": "2014-01-01",
-      "summary": "Work on freelance and independent projects as the developer in a designer-developer team.",
+      "summary": "Work on freelance and independent projects as the developer of a designer-developer team.",
       "highlights": [
-        "Created a coffescript based fixture and factory solution based on plain old Javascript objects and reduce algorithms.",
+        "Created a CoffeScript-based fixture and factory solution based on plain old Javascript objects and reduce algorithms.",
         "Runners up in the Madison College Challenege Business plan Competition."
       ]
     }
