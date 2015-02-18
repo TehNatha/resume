@@ -65,7 +65,7 @@
       "startDate": "2013-10-30",
       "summary": "Develops and maintains applications for both Android and iOS.",
       "highlights": [
-        "Created a Jenkins based Continuous Deployment system for 50 properties over 2 platforms.",
+        "Created a Jenkins-based Continuous Deployment system for 50 properties over 2 platforms.",
         "Trained peers in GIT best practices.",
         "Implemented Android code for a migration from Flurry to Google Analytics."
       ]
