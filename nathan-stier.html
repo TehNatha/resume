@@ -1,575 +1,565 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Nathan Stier</title>
-        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <style>
-            .clear-margin {
-  margin: 0;
-}
-.space-top {
-  margin-top: 10px;
-}
-.icon-left {
-  margin-right: 5px;
-}
-.icon-right {
-  margin-left: 5px;
-}
-.labels {
-  word-spacing: 5px;
-}
-.label-keyword {
-  display: inline-block;
-  background: #7eb0db;
-  color: white;
-  font-size: 0.9em;
-  padding: 5px;
-  border: 1px solid #357ebd;
-}
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Nathan Stier</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
 body {
-  font-family: 'Lato';
-  background: #f0f0f0;
-  color: #333333;
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
 }
-.main {
-  padding: 5px;
+a {
+	color: #2ecc71;
 }
-.card {
-  background: #ffffff;
-  border: 1px solid #e6e6e6;
-  border-radius: 3px;
-  min-height: 300px;
-  padding: 10px;
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
 }
-.card-nested {
-  min-height: 0;
-  margin-bottom: 10px;
-  border-width: 1px 0 0 0;
+p {
+	line-height: 1.5;
+	margin: 0;
 }
-.background-card {
-  padding: 10px 20px;
+p + p {
+	margin-top: 10px;
 }
-.card-wrapper {
-  padding: 5px;
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
 }
-.text-bolder {
-  font-weight: bold;
+section {
+	margin-top: 30px;
 }
-.background-details .detail {
-  display: table;
-  padding: 10px 0;
+li {
+	line-height: 1.8;
+	list-style: none;
 }
-.background-details .detail .icon {
-  min-width: 45px;
-  max-width: 45px;
-  text-align: center;
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
 }
-.background-details .detail .info {
-  width: 100%;
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
 }
-.background-details .detail .title,
-.background-details .detail .icon {
-  color: #707070;
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
 }
-.background-details .detail .icon,
-.background-details .detail .info {
-  display: table-cell;
-  padding: 0 10px;
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
 }
-.info .content.has-sidebar {
-  width: 80%;
-  box-sizing: border-box;
-  float: left;
-  padding: 0 10px;
-  border-right: 1px solid #cdcdcd;
+.container {
+	max-width: 750px;
+	padding: 0 30px;
 }
-.info .sidebar {
-  margin-left: 80%;
-  box-sizing: border-box;
-  padding: 10px;
+.col-sm-6 {
+	margin-bottom: 10px;
 }
-.profile-pic {
-  padding: 20px 0;
+.col-sm-12 h4 {
+	margin-top: 12px; 
 }
-.contact-details .detail {
-  display: table;
-  padding: 10px 0;
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
 }
-.contact-details .detail .icon {
-  padding: 0 10px;
-  color: #707070;
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
 }
-.contact-details .detail .info {
-  font-size: 0.8em;
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
 }
-.contact-details .detail .icon,
-.contact-details .detail .info {
-  display: table-cell;
-  vertical-align: middle;
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
 }
-.social-link {
-  margin-left: 5px;
+#content aside {
+	text-align: right;
+	padding-right: 30px;
 }
-.social-link:first-child {
-  margin-left: 0;
+#profiles .network {
+	text-transform: capitalize;
 }
-.social-link:hover {
-  text-decoration: none;
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
 }
-.link-github {
-  color: #454545;
+#education .area {
+	font-weight: bold;
 }
-.link-github:hover {
-  color: #2b2b2b;
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
 }
-.link-twitter {
-  color: #33ccff;
+#education .studyType {
+	margin-left: 25px;
 }
-.link-twitter:hover {
-  color: #00bfff;
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
 }
-.link-blog {
-  color: #f36f24;
-}
-.link-blog:hover {
-  color: #d8560c;
-}
-.link-linkedin {
-  color: #007bb6;
-}
-.link-linkedin:hover {
-  color: #005983;
-}
-.link-skype {
-  color: #12a5f4;
-}
-.link-skype:hover {
-  color: #0986ca;
-}
-.card-skills {
-  position: relative;
-}
-.skill-level {
-  border-radius: 3px;
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  left: 0;
-  width: 10px;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
-}
-.skill-level .skill-progress {
-  position: absolute;
-  border-radius: 3px;
-  bottom: 0;
-  width: 100%;
-  -webkit-transition: height 1s ease;
-}
-.skill-level .skill-progress.beginner {
-  height: 50%;
-  background: #e74c3c;
-}
-.skill-level .skill-progress.intermediate {
-  height: 70%;
-  background: #f1c40f;
-}
-.skill-level .skill-progress.advanced {
-  height: 80%;
-  background: #428bca;
-}
-.skill-level .skill-progress.master {
-  height: 95%;
-  background: #5cb85c;
-}
-.skill-info {
-  margin-left: 10px;
+#publications .website a:before {
+	content: attr(href);
 }
 
-        </style>
-    </head>
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
 
-    <body>
-        <script>
-            window.onload = function () {
-                $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
-                $( ".js-tooltip" ).tooltip();
-            }
-        </script>
-        <div class="container-fluid">
-            <div class="row main clearfix">
-                <section class="col-md-3 card-wrapper affix">
-                    <div class="card profile-card">
-                        <div class="profile-pic">
-                            <img class="media-object img-circle center-block"  data-src="holder.js/64x64"
-                                alt="64x64" src="http://www.gravatar.com/avatar/5a6bffa460733f8f21dfe95ee727c096?s=100&amp;r=pg&amp;d=mm" style="width: 100px; height: 100px;">
-                        </div>
-                            <h3 class="text-center text-bolder"> Nathan Stier</h3>
-                            <h5 class="text-muted text-center">Programmer</h5>
-                            <hr>
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Nathan Stier
+					</h1>
+					<h2>
+						Programmer
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
 
-                            <div class="contact-details clearfix">
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">nathan.stier@gmail.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">(608) 212-8177</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a href="http://nathanstier.com">http://nathanstier.com</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>Nathan Stier is a mobile and web developer from Madison, WI. He has two Associates Degrees from Madison College: IT - Web Programmer Analyst and IT - Mobile Applications Developer. He currently works at Madison Newspapers, Inc. developing applications for the iPhone as well as Android. He also does work under Lonely Robot Studio as the developer side of a designer-developer team. Outside of work he practices web development using Node.js and Ruby on Rails.
+In his spare time he can be found dying in Dark Souls, punching wood on his Minecraft server, practicing social dance at Fred Astaire Dance Studio in Madison, or rolling dice while making spreadsheets in a game of Dungeons and Dragons.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Twitter
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://www.twitter.com/TehNatha">TehNatha</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Facebook
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://www.facebook.com/TehNatha">TehNatha</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						github
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://github.com/TehNatha">TehNatha</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						NPM
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://www.npmjs.org/~tehnatha">TehNatha</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Instagram
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://www.instagram.com/TehNatha">TehNatha</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Twitter
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://www.twitter.com/TehNatha">TehNatha</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						LinkedIn
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://www.linkedin.com/in/nathanstier">NathanStier</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						About.me
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://about.me/TehNatha">TehNatha</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                                    <div class="detail">
-                                        <span class="icon">
-                                            <i class="fa fa-lg fa-location-arrow"></i>
-                                        </span>
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Madison Newspapers, Inc.</span>
+					<span class="date">
+						2013-10-30 — 
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://madison.com">http://madison.com</a>
+				</div>
+				<div class="position">
+					Mobile Developer
+				</div>
+				<div class="summary">
+					<p>Develops and maintains applications for both Android and iOS.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Created a Jenkins-based Continuous Deployment system for 50 properties over 2 platforms.</li>
+					<li class="bullet">Trained peers in GIT best practices.</li>
+					<li class="bullet">Implemented Android code for a migration from Flurry to Google Analytics.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>TrafficCast</span>
+					<span class="date">
+						2013-01-27 — 2013-08-18
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://trafficcast.com">http://trafficcast.com</a>
+				</div>
+				<div class="position">
+					Software Engineer
+				</div>
+				<div class="summary">
+					<p>Developed web scrubbers to retrieve real time traffic data from government and company sites.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Created a service that took in 1 million data points in provided in a 15 minute window in real time.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Lonely Robot Studio, LLC.</span>
+					<span class="date">
+						2014-01-01 — 
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://lonelyrobotstudio.com">http://lonelyrobotstudio.com</a>
+				</div>
+				<div class="position">
+					Co-Founder
+				</div>
+				<div class="summary">
+					<p>Work on freelance and independent projects as the developer of a designer-developer team.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Created a CoffeScript-based fixture and factory solution based on plain old Javascript objects and reduce algorithms.</li>
+					<li class="bullet">Runners up in the Madison College Challenege Business plan Competition.</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
 
-                                            <span class="info">
-                                                Madison, Midwest,
-                                                WI
-                                            </span>
-                                    </div>
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Madison College</span>
+					<span class="date">
+						 — 2012-12-21
+					</span>
+				</h4>
+				<div class="area">
+					IT - Web Programmer/Analyst
+				</div>
+				<div class="studyType">
+					Associate
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Madison College</span>
+					<span class="date">
+						 — 2013-12-21
+					</span>
+				</h4>
+				<div class="area">
+					IT - Mobile Application Developer
+				</div>
+				<div class="studyType">
+					Associate
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Full-Stack Web Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JSON</li>
+					<li>Javascript</li>
+					<li>Coffeescript</li>
+					<li>Node.js</li>
+					<li>Ruby on Rails</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Mobile Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>Swift</li>
+					<li>Objective-C</li>
+					<li>Android</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Testing</h4>
+				</div>
+				<ul class="keywords">
+					<li>RSpec</li>
+					<li>Mocha</li>
+					<li>Jasmine</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Developmet Tools</h4>
+				</div>
+				<ul class="keywords">
+					<li>Git</li>
+					<li>XCode</li>
+					<li>Jenkins</li>
+					<li>Android Studio</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
 
-                                    <div class="detail">
-                                        <span class="icon">
-                                            <i class="fa fa-lg fa-phone"></i>
-                                        </span>
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
 
-                                        <span class="info">
-                                            (608) 212-8177
-                                        </span>
-                                    </div>
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Video Games</h4>
+				</div>
+				<ul class="keywords">
+					<li>Dark Souls</li>
+					<li>Minecraft</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Pen &amp; Paper RPGs</h4>
+				</div>
+				<ul class="keywords">
+					<li>Dungeons &amp; Dragons</li>
+					<li>Pathfinder</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Social Dance</h4>
+				</div>
+				<ul class="keywords">
+					<li>Rumba</li>
+					<li>Swing</li>
+					<li>Foxtrot</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
 
-                                    <div class="detail">
-                                        <span class="icon">
-                                            <i class="fa fa-lg fa-envelope"></i>
-                                        </span>
-
-                                        <span class="info">
-                                            nathan.stier@gmail.com
-                                        </span>
-                                    </div>
-
-                                    <div class="detail">
-                                        <span class="icon" title="Languages I speak">
-                                            <i class="fa fa-lg fa-language"></i>
-                                        </span>
-
-                                        <span class="info">
-                                            English
-                                        </span>
-                                    </div>
-                            </div>
-
-                            <hr>
-
-                            <div class="social-links text-center">
-                                    <a class="fa fa-linkedin fa-2x social-link link-linkedin"
-                                           href="http://www.linkedin.com/in/nathanstier" target="_blank"></a>
-                                    <a class="fa fa-github fa-2x social-link link-github"
-                                           href="http://www.github.com/TehNatha" target="_blank"></a>
-                                    <a class="fa fa-twitter fa-2x social-link link-twitter"
-                                           href="http://www.twitter.com/TehNatha" target="_blank"></a>
-                                    <a class="fa fa-rss fa-2x social-link link-blog"
-                                           href="http://nathanstier.com" target="_blank"></a>
-                            </div>
-                    </div>
-                </section>
-
-                <section class="col-md-9 card-wrapper pull-right">
-                    <div class="card background-card">
-                        <h4 class="text-uppercase text-bolder">Background</h4>
-                        <hr>
-
-                        <div class="background-details">
-                            <div class="detail">
-                                <div class="icon">
-                                    <i class="fa fa-lg fa-user"></i>
-                                </div>
-                                <div class="info">
-                                    <h4 class="title text-uppercase">
-                                        About
-                                    </h4>
-
-                                    <div class="content">
-                                        Nathan Stier is mboile and web developer from Madison, WI. He has two Associates Degrees from Madison College, the first in IT - Web Programmer Analyst and the second in IT - Mobile Applications Developer. He corrently works at Madison Newspapers, Inc. developing applications for the iPhone as well as Android. He also does work under Lonely Robot Studio as the developer side of a desinger-developer team. Outside of work he practices web development using Node.js and Ruby on Rails.
-In his spare time he can be found dying in Dark Souls, punching wood on my Minecraft server, practicing social dance at Fred Astaire Dance Studio here in Madison, or rolling dice while making spreadsheets in a game of Dungeons and Dragons.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="detail">
-                                <div class="icon">
-                                    <i class="fa fa-lg fa-building"></i>
-                                </div>
-                                <div class="info">
-                                    <h4 class="title text-uppercase">
-                                        Work Experience
-                                    </h4>
-
-                                    <ul class="list-unstyled">
-                                            <li class="card card-nested clearfix">
-                                                <div class="content has-sidebar">
-                                                    <p><strong>Mobile Developer</strong>,&nbsp;Madison Newspapers, Inc.</p>
-                                                    <p>Developed and troubleshot applications for both Android and iOS.</p>
-                                                        <ul>
-                                                                <li> Created a Jenkins based Continuous Deployment system for 50 properties over 2 platforms. </li>
-                                                                <li> Trained peers in GIT best practices. </li>
-                                                                <li> Implemented Android code for a migration from Flurry to Google Analytics. </li>
-                                                        </ul>
-                                                </div>
-
-                                                <div class="sidebar text-muted text-center">
-                                                    <p>
-                                                        <strong>Joined:</strong>&nbsp;
-                                                        Oct, 2013
-                                                    </p>
-                                                    <p>
-                                                            <span class="label label-success">
-                                                                Currently Working
-                                                            </span>
-                                                    </p>
-                                                    <p>
-                                                        <i class="fa fa-clock-o icon-left"></i>
-                                                        11 months
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="card card-nested clearfix">
-                                                <div class="content has-sidebar">
-                                                    <p><strong>Software Engineer</strong>,&nbsp;TrafficCast</p>
-                                                    <p>Developed web scrubbers to retrieve real time traffic data from government and company sites.</p>
-                                                        <ul>
-                                                                <li> Created a service that took in 1 million data points in provided in a 15 minute window in real time. </li>
-                                                        </ul>
-                                                </div>
-
-                                                <div class="sidebar text-muted text-center">
-                                                    <p>
-                                                        <strong>Joined:</strong>&nbsp;
-                                                        Jan, 2013
-                                                    </p>
-                                                    <p>
-                                                            <strong>Left:</strong>&nbsp;
-                                                            Aug, 2013
-                                                    </p>
-                                                    <p>
-                                                        <i class="fa fa-clock-o icon-left"></i>
-                                                        6 months
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="card card-nested clearfix">
-                                                <div class="content has-sidebar">
-                                                    <p><strong>Co-Founder</strong>,&nbsp;Lonely Robot Studio, LLC.</p>
-                                                    <p>Work on freelance and independent projects as the developer in a designer-developer team.</p>
-                                                        <ul>
-                                                                <li> Created a coffescript based fixture and factory solution based on plain old Javascript objects and reduce algorithms. </li>
-                                                                <li> Runners up in the Madison College Challenege Business plan Competition. </li>
-                                                        </ul>
-                                                </div>
-
-                                                <div class="sidebar text-muted text-center">
-                                                    <p>
-                                                        <strong>Joined:</strong>&nbsp;
-                                                        Dec, 2013
-                                                    </p>
-                                                    <p>
-                                                            <span class="label label-success">
-                                                                Currently Working
-                                                            </span>
-                                                    </p>
-                                                    <p>
-                                                        <i class="fa fa-clock-o icon-left"></i>
-                                                        9 months
-                                                    </p>
-                                                </div>
-                                            </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="detail">
-                                <div class="icon">
-                                    <i class="fa fa-lg fa-code"></i>
-                                </div>
-                                <div class="info">
-                                    <h4 class="title text-uppercase">
-                                        Skills
-                                    </h4>
-
-                                    <div class="content">
-                                        <ul class="list-unstyled">
-                                                <li class="card card-nested card-skills">
-                                                    <div class="skill-info">
-                                                        <strong>Full-Stack Web Development</strong>
-
-                                                        <div class="space-top labels">
-                                                                <span class="label label-keyword">HTML</span>
-                                                                <span class="label label-keyword">CSS</span>
-                                                                <span class="label label-keyword">JSON</span>
-                                                                <span class="label label-keyword">Javascript</span>
-                                                                <span class="label label-keyword">Coffeescript</span>
-                                                                <span class="label label-keyword">Node.js</span>
-                                                                <span class="label label-keyword">Ruby on Rails</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="card card-nested card-skills">
-                                                    <div class="skill-info">
-                                                        <strong>Mobile Development</strong>
-
-                                                        <div class="space-top labels">
-                                                                <span class="label label-keyword">Swift</span>
-                                                                <span class="label label-keyword">Objective-C</span>
-                                                                <span class="label label-keyword">Android</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="card card-nested card-skills">
-                                                        <div class="skill-level js-tooltip" title="Intermediate" data-placement="left">
-                                                            <div class="skill-progress intermediate">
-                                                            </div>
-                                                        </div>
-                                                    <div class="skill-info">
-                                                        <strong>Testing</strong>
-
-                                                        <div class="space-top labels">
-                                                                <span class="label label-keyword">RSpec</span>
-                                                                <span class="label label-keyword">Mocha</span>
-                                                                <span class="label label-keyword">Jasmine</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="card card-nested card-skills">
-                                                    <div class="skill-info">
-                                                        <strong>Developmet Tools</strong>
-
-                                                        <div class="space-top labels">
-                                                                <span class="label label-keyword">Git</span>
-                                                                <span class="label label-keyword">XCode</span>
-                                                                <span class="label label-keyword">Jenkins</span>
-                                                                <span class="label label-keyword">Android Studio</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="detail">
-                                <div class="icon">
-                                    <i class="fa fa-lg fa-mortar-board"></i>
-                                </div>
-                                <div class="info">
-                                    <h4 class="title text-uppercase">
-                                        Education
-                                    </h4>
-
-                                    <div class="content">
-                                        <ul class="list-unstyled">
-                                                <li class="card card-nested">
-                                                    <div class="content has-sidebar">
-                                                        <p>
-                                                            <strong>IT - Web Programmer/Analyst, Associate</strong>,&nbsp;
-                                                            Madison College
-                                                        </p>
-                                                        <i>3.2</i>
-                                                        <div class="space-top labels">
-                                                        </div>
-                                                    </div>
-                                                    <div class="sidebar text-muted text-center">
-                                                        <p>
-                                                            <strong>Started:</strong>&nbsp;
-                                                            
-                                                        </p>
-                                                        <p>
-                                                                <strong>Completion:</strong>&nbsp;
-                                                                Dec, 2012
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li class="card card-nested">
-                                                    <div class="content has-sidebar">
-                                                        <p>
-                                                            <strong>IT - Mobile Application Developer, Associate</strong>,&nbsp;
-                                                            Madison College
-                                                        </p>
-                                                        <i>3.2</i>
-                                                        <div class="space-top labels">
-                                                        </div>
-                                                    </div>
-                                                    <div class="sidebar text-muted text-center">
-                                                        <p>
-                                                            <strong>Started:</strong>&nbsp;
-                                                            
-                                                        </p>
-                                                        <p>
-                                                                <strong>Completion:</strong>&nbsp;
-                                                                Dec, 2013
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                                <div class="detail">
-                                    <div class="icon">
-                                        <i class="fa fa-lg fa-heart"></i>
-                                    </div>
-                                    <div class="info">
-                                        <h4 class="title text-uppercase">
-                                            Interests
-                                        </h4>
-
-                                        <div class="content">
-                                            <ul class="list-unstyled">
-                                                    <li class="card card-nested">
-                                                        <p>
-                                                            <strong>Video Games</strong>
-                                                        </p>
-
-                                                        <div class="space-top labels">
-                                                                <span class="label label-keyword">Dark Souls</span>
-                                                                <span class="label label-keyword">Minecraft</span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="card card-nested">
-                                                        <p>
-                                                            <strong>Pen &amp; Paper RPGs</strong>
-                                                        </p>
-
-                                                        <div class="space-top labels">
-                                                                <span class="label label-keyword">Dungeons &amp; Dragons</span>
-                                                                <span class="label label-keyword">Pathfinder</span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="card card-nested">
-                                                        <p>
-                                                            <strong>Social Dance</strong>
-                                                        </p>
-
-                                                        <div class="space-top labels">
-                                                                <span class="label label-keyword">Rumba</span>
-                                                                <span class="label label-keyword">Swing</span>
-                                                                <span class="label label-keyword">Foxtrot</span>
-                                                        </div>
-                                                    </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
-    </body>
+	</div>
+	
+	</body>
 </html>
