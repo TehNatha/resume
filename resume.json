@@ -6,7 +6,7 @@
     "email": "nathan.stier@gmail.com",
     "phone": "(608) 212-8177",
     "website": "http://nathanstier.com",
-    "summary": "Nathan Stier is a mobile and web developer from Madison, WI. He has two Associates Degrees from Madison College: IT - Web Programmer Analyst and IT - Mobile Applications Developer. He currently works at Madison Newspapers, Inc. developing applications for the iPhone as well as Android. He also does work under Lonely Robot Studio as the developer side of a designer-developer team. Outside of work he practices web development using Node.js and Ruby on Rails.\nIn his spare time he can be found dying in Dark Souls, punching wood on his Minecraft server, practicing social dance at Fred Astaire Dance Studio in Madison, or rolling dice while making spreadsheets in a game of Dungeons and Dragons.",
+    "summary": "Nathan Stier is a mobile and web developer from Madison, WI. He has two Associates Degrees from Madison College: IT - Web Programmer Analyst and IT - Mobile Applications Developer. He currently works at Madison Newspapers, Inc. developing applications for the iPhone as well as Android. He also is an assistant instructor for the YWeb Career Academy, a partnership between Adorable.io YWCA of Madison. Outside of work he practices web development using Node.js and Ruby on Rails.\nIn his spare time he can be found dying in Dark Souls, punching wood on his Minecraft server, practicing social dance, or rolling dice while making spreadsheets in a game of Dungeons and Dragons.",
     "location": {
       "address": "81 Lakewood Gardens Ln",
       "postalCode": "53704",
@@ -58,6 +58,19 @@
     ]
   },
   "work": [
+    {
+      "company": "Adorable IO, LLC.",
+      "position": "Assistant Instructor",
+      "website": "http://ywebca.org",
+      "startDate": "2015-3-10",
+      "summary": "Work for the YWCA of Madison on behalf of Adorable as an front end web development instructors.",
+      "highlights": [
+        "Developped a command line tool for delivering exercises and curiculum to students",
+        "Instructed students in tools development tools such as Git, Sublime-Text, and the command line",
+        "Instructed students in web development tools such as JQuery, CSS 3, and HTML 5.",
+        "Instructed students in basic and advanced topics in programming such as control flow, variables, first member functions, and closures."
+      ]
+    },
     {
       "company": "Madison Newspapers, Inc.",
       "position": "Mobile Developer",
