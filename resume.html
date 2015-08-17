@@ -1,0 +1,590 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Nathan Stier</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Nathan Stier
+					</h1>
+					<h2>
+						Programmer
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="066867726e67682875726f637446616b676f6a2865696b">[email&#160;protected]</a><script cf-hash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script></div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">(608) 212-8177</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a href="http://nathanstier.com">http://nathanstier.com</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>Nathan Stier is a mobile and web developer from Madison, WI. He has two Associates Degrees from Madison College: IT - Web Programmer Analyst and IT - Mobile Applications Developer. He currently works at Madison Newspapers, Inc. developing applications for the iPhone as well as Android. He also is an assistant instructor for the YWeb Career Academy, a partnership between Adorable.io YWCA of Madison. Outside of work he practices web development using Node.js and Ruby on Rails.
+In his spare time he can be found dying in Dark Souls, punching wood on his Minecraft server, practicing social dance, or rolling dice while making spreadsheets in a game of Dungeons and Dragons.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Twitter
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://www.twitter.com/TehNatha">TehNatha</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Facebook
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://www.facebook.com/TehNatha">TehNatha</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						github
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://github.com/TehNatha">TehNatha</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						NPM
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://www.npmjs.org/~tehnatha">TehNatha</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Instagram
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://www.instagram.com/TehNatha">TehNatha</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Twitter
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://www.twitter.com/TehNatha">TehNatha</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						LinkedIn
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://www.linkedin.com/in/nathanstier">NathanStier</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						About.me
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://about.me/TehNatha">TehNatha</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Adorable IO, LLC.</span>
+					<span class="date">
+						2015-3-10 — 
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://ywebca.org">http://ywebca.org</a>
+				</div>
+				<div class="position">
+					Assistant Instructor
+				</div>
+				<div class="summary">
+					<p>Work for the YWCA of Madison on behalf of Adorable as an front end web development instructors.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Developped a command line tool for delivering exercises and curiculum to students</li>
+					<li class="bullet">Instructed students in tools development tools such as Git, Sublime-Text, and the command line</li>
+					<li class="bullet">Instructed students in web development tools such as JQuery, CSS 3, and HTML 5.</li>
+					<li class="bullet">Instructed students in basic and advanced topics in programming such as control flow, variables, first member functions, and closures.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Madison Newspapers, Inc.</span>
+					<span class="date">
+						2013-10-30 — 
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://madison.com">http://madison.com</a>
+				</div>
+				<div class="position">
+					Mobile Developer
+				</div>
+				<div class="summary">
+					<p>Develops and maintains applications for both Android and iOS.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Created a Jenkins-based Continuous Deployment system for 50 properties over 2 platforms.</li>
+					<li class="bullet">Trained peers in GIT best practices.</li>
+					<li class="bullet">Implemented Android code for a migration from Flurry to Google Analytics.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>TrafficCast</span>
+					<span class="date">
+						2013-01-27 — 2013-08-18
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://trafficcast.com">http://trafficcast.com</a>
+				</div>
+				<div class="position">
+					Software Engineer
+				</div>
+				<div class="summary">
+					<p>Developed web scrubbers to retrieve real time traffic data from government and company sites.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Created a service that took in 1 million data points in provided in a 15 minute window in real time.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Lonely Robot Studio, LLC.</span>
+					<span class="date">
+						2014-01-01 — 
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://lonelyrobotstudio.com">http://lonelyrobotstudio.com</a>
+				</div>
+				<div class="position">
+					Co-Founder
+				</div>
+				<div class="summary">
+					<p>Work on freelance and independent projects as the developer of a designer-developer team.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Created a CoffeScript-based fixture and factory solution based on plain old Javascript objects and reduce algorithms.</li>
+					<li class="bullet">Runners up in the Madison College Challenege Business plan Competition.</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Madison College</span>
+					<span class="date">
+						 — 2012-12-21
+					</span>
+				</h4>
+				<div class="area">
+					IT - Web Programmer/Analyst
+				</div>
+				<div class="studyType">
+					Associate
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Madison College</span>
+					<span class="date">
+						 — 2013-12-21
+					</span>
+				</h4>
+				<div class="area">
+					IT - Mobile Application Developer
+				</div>
+				<div class="studyType">
+					Associate
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Full-Stack Web Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JSON</li>
+					<li>Javascript</li>
+					<li>Coffeescript</li>
+					<li>Node.js</li>
+					<li>Ruby on Rails</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Mobile Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>Swift</li>
+					<li>Objective-C</li>
+					<li>Android</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Testing</h4>
+				</div>
+				<ul class="keywords">
+					<li>RSpec</li>
+					<li>Mocha</li>
+					<li>Jasmine</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Developmet Tools</h4>
+				</div>
+				<ul class="keywords">
+					<li>Git</li>
+					<li>XCode</li>
+					<li>Jenkins</li>
+					<li>Android Studio</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Video Games</h4>
+				</div>
+				<ul class="keywords">
+					<li>Dark Souls</li>
+					<li>Minecraft</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Pen &amp; Paper RPGs</h4>
+				</div>
+				<ul class="keywords">
+					<li>Dungeons &amp; Dragons</li>
+					<li>Pathfinder</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Social Dance</h4>
+				</div>
+				<ul class="keywords">
+					<li>Rumba</li>
+					<li>Swing</li>
+					<li>Foxtrot</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+
+	</div>
+	
+	</body>
+</html>
