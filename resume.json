@@ -11,8 +11,7 @@
       "address": "111 NE 6th Ave #416",
       "postalCode": "97232",
       "city": "Portland",
-      "countryCode": "OR",
-      "region": "PNW"
+      "countryCode": "OR"
     },
     "profiles": [
       {
@@ -53,8 +52,8 @@
       "position": "Android Developer",
       "website": "http://soliddigital.com",
       "startDate": "2015-10-12",
-      "endDate": "2017-7-7",
-      "summary": "Devlop and design native and cross platform mobile applications for various clients.",
+      "endDate": "2017-07-07",
+      "summary": "Develop and design native and cross platform mobile applications for various clients.",
       "highlights": [
         "Developed app to control electrical timers via BLE",
         "Learned Xamarin cross platform development",
@@ -66,8 +65,8 @@
       "company": "Adorable IO, LLC.",
       "position": "Assistant Instructor",
       "website": "http://ywebca.org",
-      "startDate": "2015-3-10",
-      "endDate": "2015-8-15",
+      "startDate": "2015-03-10",
+      "endDate": "2015-08-15",
       "summary": "Work for the YWCA of Madison on behalf of Adorable as an front end web development instructors.",
       "highlights": [
         "Developped a command line tool for delivering exercises and curiculum to students",
@@ -81,7 +80,7 @@
       "position": "Mobile Developer",
       "website": "http://madison.com",
       "startDate": "2013-10-30",
-      "endDate": "2015-9-30",
+      "endDate": "2015-09-30",
       "summary": "Develop and maintain applications for both Android and iOS.",
       "highlights": [
         "Created a Jenkins-based Continuous Deployment system for 50 properties over 2 platforms.",
