@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "Nathan Stier",
-    "label": "Programmer",
+    "label": "Mobile Developer",
     "picture": "http://www.gravatar.com/avatar/5a6bffa460733f8f21dfe95ee727c096.png",
     "email": "nathan.stier@gmail.com",
     "phone": "(608) 212-8177",
     "website": "http://nathanstier.com",
-    "summary": "Nathan Stier is a mobile and web developer from Madison, WI. He has two Associates Degrees from Madison College: IT - Web Programmer Analyst and IT - Mobile Applications Developer. He currently works at Madison Newspapers, Inc. developing applications for the iPhone as well as Android. He also is an assistant instructor for the YWeb Career Academy, a partnership between Adorable.io YWCA of Madison. Outside of work he practices web development using Node.js and Ruby on Rails.\nIn his spare time he can be found dying in Dark Souls, punching wood on his Minecraft server, practicing social dance, or rolling dice while making spreadsheets in a game of Dungeons and Dragons.",
+    "summary": "Nathan Stier is an Android and cross-platform .Net mobile developer in Portland, OR. He has two Associates Degrees from Madison College: IT - Web Programmer Analyst and IT - Mobile Applications Developer. He has 5 years of experience developing for mobile with a focus on Android.",
     "location": {
-      "address": "81 Lakewood Gardens Ln",
-      "postalCode": "53704",
-      "city": "Madison",
-      "countryCode": "WI",
-      "region": "Midwest"
+      "address": "111 NE 6th Ave #416",
+      "postalCode": "97232",
+      "city": "Portland",
+      "countryCode": "OR",
+      "region": "PNW"
     },
     "profiles": [
       {
@@ -41,28 +41,33 @@
         "url": "http://www.instagram.com/TehNatha"
       },
       {
-        "network": "Twitter",
-        "username": "TehNatha",
-        "url": "http://www.twitter.com/TehNatha"
-      },
-      {
         "network": "LinkedIn",
         "username": "NathanStier",
         "url": "http://www.linkedin.com/in/nathanstier"
-      },
-      {
-        "network": "About.me",
-        "username": "TehNatha",
-        "url": "http://about.me/TehNatha"
       }
     ]
   },
   "work": [
     {
+      "company": "Solid Digital",
+      "position": "Android Developer",
+      "website": "http://soliddigital.com",
+      "startDate": "2015-10-12",
+      "endDate": "2017-7-7",
+      "summary": "Devlop and design native and cross platform mobile applications for various clients.",
+      "highlights": [
+        "Developed app to control electrical timers via BLE",
+        "Learned Xamarin cross platform development",
+        "Developed a reference application for Widevine DRM with ExoPlayer",
+        "Worked in a team of various domain knowledges in iOS, Android, and Xamarin crossplatform developers to match specifications across platforms"
+      ]
+    },
+    {
       "company": "Adorable IO, LLC.",
       "position": "Assistant Instructor",
       "website": "http://ywebca.org",
       "startDate": "2015-3-10",
+      "endDate": "2015-8-15",
       "summary": "Work for the YWCA of Madison on behalf of Adorable as an front end web development instructors.",
       "highlights": [
         "Developped a command line tool for delivering exercises and curiculum to students",
@@ -76,11 +81,12 @@
       "position": "Mobile Developer",
       "website": "http://madison.com",
       "startDate": "2013-10-30",
-      "summary": "Develops and maintains applications for both Android and iOS.",
+      "endDate": "2015-9-30",
+      "summary": "Develop and maintain applications for both Android and iOS.",
       "highlights": [
         "Created a Jenkins-based Continuous Deployment system for 50 properties over 2 platforms.",
         "Trained peers in GIT best practices.",
-        "Implemented Android code for a migration from Flurry to Google Analytics."
+        "Migrated Android analytics from Flurry to Google Analytics."
       ]
     },
     {
@@ -89,20 +95,20 @@
       "website": "http://trafficcast.com",
       "startDate": "2013-01-27",
       "endDate": "2013-08-18",
-      "summary": "Developed web scrubbers to retrieve real time traffic data from government and company sites.",
+      "summary": "Develop web scrappers to retrieve real time traffic data from government and company sites.",
       "highlights": [
-        "Created a service that took in 1 million data points in provided in a 15 minute window in real time."
+        "Created a service that took in and consumed 1 million data points in a 15 minutes in real time"
       ]
     },
     {
-      "company": "Lonely Robot Studio, LLC.",
-      "position": "Co-Founder",
-      "website": "http://lonelyrobotstudio.com",
-      "startDate": "2014-01-01",
-      "summary": "Work on freelance and independent projects as the developer of a designer-developer team.",
+      "company": "Madison College",
+      "position": "Student Help",
+      "website": "http://MadisonColege.com",
+      "startDate": "2012-01-28",
+      "endDate": "2012-07-07",
+      "summary": "Develop adult education informational app.",
       "highlights": [
-        "Created a CoffeScript-based fixture and factory solution based on plain old Javascript objects and reduce algorithms.",
-        "Runners up in the Madison College Challenege Business plan Competition."
+        "Reproduced and matched specifications from previous iOS app"
       ]
     }
   ],
@@ -124,8 +130,8 @@
   ],
   "skills": [
     {
-      "name": "Full-Stack Web Development",
-      "level": "Expert",
+      "name": "Web Development",
+      "level": "Intermediate",
       "keywords": [
         "HTML",
         "CSS",
@@ -133,7 +139,7 @@
         "Javascript",
         "Coffeescript",
         "Node.js",
-        "Ruby on Rails"
+        "Java"
       ]
     },
     {
@@ -142,16 +148,17 @@
       "keywords": [
         "Swift",
         "Objective-C",
-        "Android"
+        "Android",
+        "Xamarin"
       ]
     },
     {
       "name": "Testing",
       "level": "Intermediate",
       "keywords": [
-        "RSpec",
         "Mocha",
-        "Jasmine"
+        "Jasmine",
+        "NUnit"
       ]
     },
     {
@@ -160,8 +167,8 @@
       "keywords": [
         "Git",
         "XCode",
-        "Jenkins",
-        "Android Studio"
+        "Android Studio",
+        "Visual Studio"
       ]
     }
 
@@ -192,7 +199,7 @@
       "keywords": [
         "Rumba",
         "Swing",
-        "Foxtrot"
+        "Tango"
       ]
     }
   ]
