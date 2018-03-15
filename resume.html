@@ -1,590 +1,704 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>Nathan Stier</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
-	<style type="text/css">
-	@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
-body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
-}
-a {
-	color: #2ecc71;
-}
-a:focus,
-a:hover {
-	color: #f1c40f;
-	text-decoration: none;
-}
-p {
-	line-height: 1.5;
-	margin: 0;
-}
-p + p {
-	margin-top: 10px;
-}
-h1,
-h2,
-h3,
-h4 {
-	margin-top: 0
-}
-section {
-	margin-top: 30px;
-}
-li {
-	line-height: 1.8;
-	list-style: none;
-}
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
-}
-blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
-}
-em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
-}
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
-}
-.container {
-	max-width: 750px;
-	padding: 0 30px;
-}
-.col-sm-6 {
-	margin-bottom: 10px;
-}
-.col-sm-12 h4 {
-	margin-top: 12px; 
-}
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
-}
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-#profiles .network {
-	text-transform: capitalize;
-}
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Nathan Stier</title>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <style>body, html {
+  padding-top:2.5em;
+  margin:0;
+  background-color:#fafafa;
 }
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
-}
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
-}
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
+.note {
+  display:block;
+  position: absolute;
+  top:10px;
+  left:10px;
+
+  font-family: "Open Sans";
+  font-size: 0.6em;
 }
 
-	</style>
-	
-	</head>
-	<body>
-	
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>
-						Nathan Stier
-					</h1>
-					<h2>
-						Programmer
-					</h2>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
+.new {
+  background-color: #81C784;
 
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="066867726e67682875726f637446616b676f6a2865696b">[email&#160;protected]</a><script cf-hash='f9e31' type="text/javascript">
-/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script></div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">(608) 212-8177</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				<div class="website">
-					<a href="http://nathanstier.com">http://nathanstier.com</a>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
-			<p>Nathan Stier is a mobile and web developer from Madison, WI. He has two Associates Degrees from Madison College: IT - Web Programmer Analyst and IT - Mobile Applications Developer. He currently works at Madison Newspapers, Inc. developing applications for the iPhone as well as Android. He also is an assistant instructor for the YWeb Career Academy, a partnership between Adorable.io YWCA of Madison. Outside of work he practices web development using Node.js and Ruby on Rails.
-In his spare time he can be found dying in Dark Souls, punching wood on his Minecraft server, practicing social dance, or rolling dice while making spreadsheets in a game of Dungeons and Dragons.</p>
-		</div>
-	</section>
-	<section id="profiles" class="row">
-		<aside class="col-sm-3">
-			<h3>Profiles</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-				<div class="col-sm-6">
-					<strong class="network">
-						Twitter
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="http://www.twitter.com/TehNatha">TehNatha</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						Facebook
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="http://www.facebook.com/TehNatha">TehNatha</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						github
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://github.com/TehNatha">TehNatha</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						NPM
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="http://www.npmjs.org/~tehnatha">TehNatha</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						Instagram
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="http://www.instagram.com/TehNatha">TehNatha</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						Twitter
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="http://www.twitter.com/TehNatha">TehNatha</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						LinkedIn
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="http://www.linkedin.com/in/nathanstier">NathanStier</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						About.me
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="http://about.me/TehNatha">TehNatha</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  border: 1px solid #757575;
+  padding: 1px;
+  border-radius: 4px;
 
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Adorable IO, LLC.</span>
-					<span class="date">
-						2015-3-10 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://ywebca.org">http://ywebca.org</a>
-				</div>
-				<div class="position">
-					Assistant Instructor
-				</div>
-				<div class="summary">
-					<p>Work for the YWCA of Madison on behalf of Adorable as an front end web development instructors.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Developped a command line tool for delivering exercises and curiculum to students</li>
-					<li class="bullet">Instructed students in tools development tools such as Git, Sublime-Text, and the command line</li>
-					<li class="bullet">Instructed students in web development tools such as JQuery, CSS 3, and HTML 5.</li>
-					<li class="bullet">Instructed students in basic and advanced topics in programming such as control flow, variables, first member functions, and closures.</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Madison Newspapers, Inc.</span>
-					<span class="date">
-						2013-10-30 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://madison.com">http://madison.com</a>
-				</div>
-				<div class="position">
-					Mobile Developer
-				</div>
-				<div class="summary">
-					<p>Develops and maintains applications for both Android and iOS.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Created a Jenkins-based Continuous Deployment system for 50 properties over 2 platforms.</li>
-					<li class="bullet">Trained peers in GIT best practices.</li>
-					<li class="bullet">Implemented Android code for a migration from Flurry to Google Analytics.</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>TrafficCast</span>
-					<span class="date">
-						2013-01-27 — 2013-08-18
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://trafficcast.com">http://trafficcast.com</a>
-				</div>
-				<div class="position">
-					Software Engineer
-				</div>
-				<div class="summary">
-					<p>Developed web scrubbers to retrieve real time traffic data from government and company sites.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Created a service that took in 1 million data points in provided in a 15 minute window in real time.</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Lonely Robot Studio, LLC.</span>
-					<span class="date">
-						2014-01-01 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://lonelyrobotstudio.com">http://lonelyrobotstudio.com</a>
-				</div>
-				<div class="position">
-					Co-Founder
-				</div>
-				<div class="summary">
-					<p>Work on freelance and independent projects as the developer of a designer-developer team.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Created a CoffeScript-based fixture and factory solution based on plain old Javascript objects and reduce algorithms.</li>
-					<li class="bullet">Runners up in the Madison College Challenege Business plan Competition.</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+}
 
-	
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Madison College</span>
-					<span class="date">
-						 — 2012-12-21
-					</span>
-				</h4>
-				<div class="area">
-					IT - Web Programmer/Analyst
-				</div>
-				<div class="studyType">
-					Associate
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Madison College</span>
-					<span class="date">
-						 — 2013-12-21
-					</span>
-				</h4>
-				<div class="area">
-					IT - Mobile Application Developer
-				</div>
-				<div class="studyType">
-					Associate
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	
-	
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Full-Stack Web Development</h4>
-				</div>
-				<ul class="keywords">
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JSON</li>
-					<li>Javascript</li>
-					<li>Coffeescript</li>
-					<li>Node.js</li>
-					<li>Ruby on Rails</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Mobile Development</h4>
-				</div>
-				<ul class="keywords">
-					<li>Swift</li>
-					<li>Objective-C</li>
-					<li>Android</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Testing</h4>
-				</div>
-				<ul class="keywords">
-					<li>RSpec</li>
-					<li>Mocha</li>
-					<li>Jasmine</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Developmet Tools</h4>
-				</div>
-				<ul class="keywords">
-					<li>Git</li>
-					<li>XCode</li>
-					<li>Jenkins</li>
-					<li>Android Studio</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+/* Header */
 
-	<section id="languages" class="row">
-		<aside class="col-sm-3">
-			<h3>Languages</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>English</strong>
-				</div>
-				<div class="fluency">
-					Native speaker
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
+header {
+  width:100%;
+  vertical-align: middle;
+  text-align: center;
+ 
+}
 
-	<section id="interests" class="row">
-		<aside class="col-sm-3">
-			<h3>Interests</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Video Games</h4>
-				</div>
-				<ul class="keywords">
-					<li>Dark Souls</li>
-					<li>Minecraft</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Pen &amp; Paper RPGs</h4>
-				</div>
-				<ul class="keywords">
-					<li>Dungeons &amp; Dragons</li>
-					<li>Pathfinder</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Social Dance</h4>
-				</div>
-				<ul class="keywords">
-					<li>Rumba</li>
-					<li>Swing</li>
-					<li>Foxtrot</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
+.header-content {
+  display: inline-block;
+}
 
-	</div>
-	
-	</body>
+.pic {
+  margin: 0 auto;
+  margin-top:-2.5em;
+  
+  border-radius:10em;
+  height:4em;
+  width:4em;
+  
+  border: 2px solid #e0e0e0;
+  transition : all 0.5s linear;
+  
+}
+
+@-webkit-keyframes wiggle {
+  0%   {
+    transform: rotate(0deg);
+  }
+  25%  {
+    transform: rotate(-30deg);
+  }
+  50%  {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.pic:hover {
+  /*Webkit fix*/
+  -webkit-transform: translateZ(0);
+  
+  cursor:pointer;
+  
+  -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.header-text {
+  margin-top:0.5em;
+  margin-left:1em;
+}
+
+header p {
+  text-align:center;
+  font-family: "Merriweather";
+  
+  margin:0;
+  
+  color: #212121;
+}
+
+.first-name {
+   font-size: 1.05em;
+}
+
+.subtitle {
+  font-family: "Merriweather";
+  padding-top:.3em;
+  font-size:0.55em;
+  font-weight:500;
+  color: #424242;
+}
+
+/* Information */
+
+.paper {
+  margin: 0 auto;
+  margin-bottom:1em;
+  
+  background-color:white;
+  width:60%;
+  
+  padding:0.5em 0 0.5em 0;
+  
+  border-top: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 3px solid #e0e0e0;
+  border-radius:3px;
+}
+
+@media(max-width:992px) {
+  .paper {
+    width:80%;
+  }
+}
+
+/* Content Part */
+
+.content-wrapper {
+  padding-right:7.25%;
+}
+
+.content {
+  display:table;
+  width:100%;
+  
+  padding-top:1.5em;
+  
+  /*border-top: 1px solid #eeeeee;*/
+}
+
+.content:last-child {
+  margin-bottom: 2em;
+}
+
+body > div > article > div > section:last-child {
+  padding-bottom:1.5em;
+}
+
+.row {
+    display:table-row;
+}
+.row div {
+    display:table-cell;
+}
+
+.content-cat {
+  font-family: "Merriweather";
+  font-variant:small-caps;
+  font-weight:300;
+  letter-spacing: 1px;
+  
+  color: #212121;
+  
+  font-size:0.975em;
+  
+  text-align:center;
+  vertical-align:middle;
+
+  padding-left:6.66%;
+  width:30%;
+}
+
+.content-cat p {
+  font-size:0.55em;
+  font-weight:600;
+  
+  margin-bottom:0;
+}
+
+.content-text {
+  border-left:1px solid #e0e0e0;
+  transition: border 0.66s ease-in;
+}
+
+.big-text {
+  vertical-align:top;
+}
+
+.content-text ul {
+  padding:0;
+  margin:0;
+  margin-top:0.15em;
+  
+  width:85%;
+  margin-left:1.5em;
+}
+
+.content-text ul:last-child {
+  margin-bottom:0.5em;
+}
+
+.content-text ul li {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  
+  display:inline-block;
+  
+}
+
+.content-text ul li:first-child {
+  width:35%;
+  
+  color: #424242;
+  
+  font-weight:600;
+}
+
+.content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+  text-decoration: none;
+  color: #0277bd;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.work-listing p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  
+  color: #424242;
+  
+  margin-left:2em;
+  margin-top:0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.work-listing.education-listing > p:nth-child(2) {
+  margin-top:0.25em;
+}
+
+.work-listing .highlight {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+  
+  color: #424242;
+  
+  margin-left:3.25em;
+  padding-left:0.5em;
+  
+  border-left:1px solid #e0e0e0;
+  
+}
+
+.education-listing > .heading {
+  font-weight:600;
+  
+  margin-top:0.75em;
+  margin-left:2em;
+}
+
+.education-listing > .highlight {
+  margin-left:3.25em;
+}
+
+.highlight {
+  transition: border .33s ease-in;
+}
+
+.profiles-listing ul li, .profiles-listing ul li:first-child {
+  width:32%;
+  font-weight: normal;
+}
+
+.work-content, .education-content {
+  padding-top: .75em;
+}
+
+section.content.education-content > div > div.content-cat {
+  vertical-align: top;
+}
+
+div.content-text.skills-listing > p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+
+  margin-left: 2em;
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.skills-listing > p > {
+  color:#212121;
+}
+
+@media screen and (max-width: 600px) {
+  body, html {
+    padding-top: 30px;
+  }
+
+  .paper {
+    width:95%;
+  }
+
+  .row div {
+    display: block;
+  }
+
+  .content-cat {
+    width: 100%;
+  }
+
+  .content-text ul li {
+    width: 100%;
+  }
+
+  .content-text ul li:first-child {
+    width: 100%;
+  }
+  
+  .education-listing > .highlight {
+    margin-left: 30px;
+  }
+}</style>
+  <style media="print">
+body, html {
+  background-color: white;
+  padding-top: 1.5em;
+}
+
+.paper {
+  width:100%;
+  border: 0;
+
+  padding-top: 0;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+.subtitle {
+  font-size: 0.7em;
+}
+
+.header-pic {
+  float:left;
+}
+
+.profiles {
+  display:none;
+}
+
+.content {
+  page-break-inside:avoid; 
+  page-break-after:auto;
+}
+
+.header-text {
+  float:left;
+  margin-top: -1.6em;
+}
+
+.content-wrapper > .content:first-child {
+  padding-top: 2em;
+}
+
+.content:last-child {
+  padding-bottom: 0;
+}
+
+.content-cat {
+  width:33%;
+  color:black;
+  text-align: left;
+}
+
+.content-cat p {
+  font-size:0.6em;
+  font-weight: 600;
+}
+
+header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
+  color:black;
+}
+
+.content-text.skills-listing > ul > li span, .subtitle {
+  color:#212121;
+}
+
+.content-text ul:last-child {
+  margin-bottom: 0.25em;
+}
+
+.content-text ul li:first-child {
+  width:50%;
+}
+
+.profiles-listing ul li:first-child {
+  width:32%;
+}
+
+div.content-text.skills-listing > ul > li {
+  width:33%;
+}
+
+.work-listing p {
+  margin-bottom: 0.1em;
+}
+
+div.content-text.skills-listing > ul > li > p {
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+}
+
+div.content-text.skills-listing > ul > li {
+  padding-left: 1.5em;
+}
+
+div.content-text.skills-listing > ul > li:first-child {
+  padding-left: 2em;
+}
+
+.note {
+  display:none;
+}
+
+.content-text:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.big-text {
+  padding-top: 0;
+}</style>
+</head>
+<body>
+  <div class="resume-wrapper">
+    <article class="paper">
+        <header>
+          <div class="header-content">
+            <div class="header-text">
+              <p>
+                Nathan Stier
+              </p>
+              <p class="subtitle">Mobile Developer</p>
+            </div>
+          </div>
+        </header>
+        <div class="content-wrapper">
+          <!-- CONTACT -->
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Contact
+              </div>
+              <div class="content-text">
+                  <ul>
+                    <li>Website</li>
+                    <li>http://tehnatha.com</li>
+                  </ul>
+                  <ul>
+                    <li>Email</li>
+                    <li>nathan.stier@gmail.com</li>
+                  </ul>
+                  <ul>
+                    <li>Phone</li>
+                    <li>(608) 212-8177</li>
+                  </ul>
+              </div>
+            </div>
+          </section>
+          <!-- LOCATION -->
+              <section class="content">
+                <div class="row">
+                  <div class="content-cat">
+                    Location
+                  </div>
+                  <div class="content-text">
+                      <ul>
+                        <li>Address</li>
+                        <li>111 NE 6th Ave #416</li>
+                      </ul>
+                        <ul>
+                          <li>Postal Code & City</li>
+                          <li>97232 Portland</li>
+                        </ul>
+                  </div>
+                </div>
+              </section>
+        
+                <section class="content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                        Work  Experience
+                          <p>2015-10-12 till 2017-07-07</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p style="margin-top:2.4em;">
+                          <strong>Android Developer</strong>
+                          at <strong><a href="http://soliddigital.com">Solid Digital:</a></strong>
+                        </p>
+                        <p>Develop and design native and cross platform mobile applications for a multitude of clients.</p>
+                          <p class="highlight">Developed app to control electrical timers via BLE</p>
+                          <p class="highlight">Learned Xamarin cross platform development</p>
+                          <p class="highlight">Worked with monthly deadlines and two week sprints</p>
+                          <p class="highlight">Met specifications for various stakeholders: international, enterprise, and startup</p>
+                          <p class="highlight">Worked with designers, project managers, and developers to turn contracts into specifications and storyboards</p>
+                          <p class="highlight">Developed applacitions in tandem with external teams</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2015-03-10 till 2015-08-15</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                          <strong>Assistant Instructor</strong>
+                          at <strong><a href="http://ywebca.org">Adorable IO, LLC.:</a></strong>
+                        </p>
+                        <p>Work for the YWCA of Madison on behalf of Adorable as an front end web development instructors.</p>
+                          <p class="highlight">Developped a command line tool for delivering exercises and curiculum</p>
+                          <p class="highlight">Instructed students in development tools such as Git, Sublime-Text, and CLI</p>
+                          <p class="highlight">Instructed students in web development tools such as JQuery, CSS, and HTML</p>
+                          <p class="highlight">Instructed students in programming topics such as control flow, variables, first member functions, and closures</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content work-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                          <p>2013-10-30 till 2015-09-30</p>
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p>
+                          <strong>Mobile Developer</strong>
+                          at <strong><a href="http://madison.com">Madison Newspapers, Inc.:</a></strong>
+                        </p>
+                        <p>Develop and maintain applications for both Android and iOS.</p>
+                          <p class="highlight">Sole developer for Android code base</p>
+                          <p class="highlight">Created a Jenkins-based Continuous Deployment system for 50 properties over 2 platforms</p>
+                          <p class="highlight">Trained peers in GIT best practices</p>
+                          <p class="highlight">Migrated analytics from Flurry to Google Analytics</p>
+                    </div>
+                  </div>
+                </section>
+
+
+                <section class="content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                        Education
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="heading" style="margin-top:2.35em;">Madison College</p>
+                        <p class="highlight">
+                          Associate:
+                          <i>IT - Web Programmer/Analyst </i>
+                        </p>
+                    </div>
+                  </div>
+                </section>
+                <section class="content education-content">
+                  <div class="row">
+                    <div class="content-cat big-text">
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                          <p class="heading">Madison College</p>
+                        <p class="highlight">
+                          Associate:
+                          <i>IT - Mobile Application Developer </i>
+                        </p>
+                    </div>
+                  </div>
+                </section>
+
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Skills
+              </div>
+              <div class="content-text skills-listing">
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Mobile Development:
+                        </strong>
+                    </span>
+                      Android, Swift, Objective-C, Xamarin
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Web Development:
+                        </strong>
+                    </span>
+                      CSS, HTML, Javascript, Node.js, REST, JSON
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Testing:
+                        </strong>
+                    </span>
+                      Mocha, Jasmine, NUnit
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Technologies:
+                        </strong>
+                    </span>
+                      BLE GATT, Widevine
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Data Systems:
+                        </strong>
+                    </span>
+                      Realm, Couchbase, SQLite, Postgresql
+                  </p>
+                  <p>
+                    <span class="name">
+                        <strong>
+                          Project Tools:
+                        </strong>
+                    </span>
+                      Jira, Kanban, Slack, Harvest, Forecast
+                  </p>
+              </div>
+            </div>
+          </section>
+
+  <!-- LANGUAGE -->
+            <!-- PROFILES -->
+              <section class="content profiles">
+                <div class="row">
+                  <div class="content-cat">
+                    Profiles
+                  </div>
+                  <div class="content-text profiles-listing">
+                    <ul>
+                          <li>
+                            <a href="http://www.twitter.com/TehNatha" target="_blank">
+                              Twitter
+                            </a>
+                          </li>
+                          <li>
+                            <a href="http://www.facebook.com/TehNatha" target="_blank">
+                              Facebook
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/TehNatha" target="_blank">
+                              github
+                            </a>
+                          </li>
+                          <li>
+                            <a href="http://www.npmjs.org/~tehnatha" target="_blank">
+                              NPM
+                            </a>
+                          </li>
+                          <li>
+                            <a href="http://www.instagram.com/TehNatha" target="_blank">
+                              Instagram
+                            </a>
+                          </li>
+                          <li>
+                            <a href="http://www.linkedin.com/in/nathanstier" target="_blank">
+                              LinkedIn
+                            </a>
+                          </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+
+        </div>
+    </article>
+  </div>
+</body>
 </html>
