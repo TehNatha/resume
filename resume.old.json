@@ -1,0 +1,212 @@
+{
+  "basics": {
+    "name": "Nathan Stier",
+    "label": "Mobile Developer",
+    "picture": "http://www.gravatar.com/avatar/5a6bffa460733f8f21dfe95ee727c096.png",
+    "email": "nathan.stier@gmail.com",
+    "phone": "(608) 212-8177",
+    "website": "http://tehnatha.com",
+    "summary": "Nathan Stier is an Android and cross-platform .Net mobile developer in Portland, OR. He has two Associates Degrees from Madison College: IT - Web Programmer Analyst and IT - Mobile Applications Developer. He has 5 years of experience developing for mobile with a focus on Android.",
+    "location": {
+      "address": "111 NE 6th Ave #416",
+      "postalCode": "97232",
+      "city": "Portland",
+      "countryCode": "OR"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "TehNatha",
+        "url": "http://www.twitter.com/TehNatha"
+      },
+      {
+        "network": "Facebook",
+        "username": "TehNatha",
+        "url": "http://www.facebook.com/TehNatha"
+      },
+      {
+        "network": "github",
+        "username": "TehNatha",
+        "url": "https://github.com/TehNatha"
+      },
+      {
+        "network": "NPM",
+        "username": "TehNatha",
+        "url": "http://www.npmjs.org/~tehnatha"
+      },
+      {
+        "network": "Instagram",
+        "username": "TehNatha",
+        "url": "http://www.instagram.com/TehNatha"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "NathanStier",
+        "url": "http://www.linkedin.com/in/nathanstier"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Solid Digital",
+      "position": "Android Developer",
+      "website": "http://soliddigital.com",
+      "startDate": "2015-10-12",
+      "endDate": "2017-07-07",
+      "summary": "Develop and design native and cross platform mobile applications for various clients.",
+      "highlights": [
+        "Developed app to control electrical timers via BLE",
+        "Learned Xamarin cross platform development",
+        "Developed a reference application for Widevine DRM with ExoPlayer",
+        "Worked in a team of various domain knowledges in iOS, Android, and Xamarin crossplatform developers to match specifications across platforms"
+      ]
+    },
+    {
+      "company": "Adorable IO, LLC.",
+      "position": "Assistant Instructor",
+      "website": "http://ywebca.org",
+      "startDate": "2015-03-10",
+      "endDate": "2015-08-15",
+      "summary": "Work for the YWCA of Madison on behalf of Adorable as an front end web development instructors.",
+      "highlights": [
+        "Developped a command line tool for delivering exercises and curiculum to students",
+        "Instructed students in tools development tools such as Git, Sublime-Text, and the command line",
+        "Instructed students in web development tools such as JQuery, CSS 3, and HTML 5.",
+        "Instructed students in basic and advanced topics in programming such as control flow, variables, first member functions, and closures."
+      ]
+    },
+    {
+      "company": "Madison Newspapers, Inc.",
+      "position": "Mobile Developer",
+      "website": "http://madison.com",
+      "startDate": "2013-10-30",
+      "endDate": "2015-09-30",
+      "summary": "Develop and maintain applications for both Android and iOS.",
+      "highlights": [
+        "Created a Jenkins-based Continuous Deployment system for 50 properties over 2 platforms.",
+        "Trained peers in GIT best practices.",
+        "Migrated Android analytics from Flurry to Google Analytics."
+      ]
+    },
+    {
+      "company": "TrafficCast",
+      "position": "Software Engineer",
+      "website": "http://trafficcast.com",
+      "startDate": "2013-01-27",
+      "endDate": "2013-08-18",
+      "summary": "Develop web scrappers to retrieve real time traffic data from government and company sites.",
+      "highlights": [
+        "Created a service that took in and consumed 1 million data points in a 15 minutes in real time"
+      ]
+    },
+    {
+      "company": "Madison College",
+      "position": "Student Help",
+      "website": "http://MadisonColege.com",
+      "startDate": "2012-01-28",
+      "endDate": "2012-07-07",
+      "summary": "Develop adult education informational app.",
+      "highlights": [
+        "Reproduced and matched specifications from previous iOS app"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Madison College",
+      "area": "IT - Web Programmer/Analyst",
+      "studyType": "Associate",
+      "endDate": "2012-12-21"
+    },
+    {
+      "institution": "Madison College",
+      "area": "IT - Mobile Application Developer",
+      "studyType": "Associate",
+      "endDate": "2013-12-21"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JSON",
+        "Javascript",
+        "Coffeescript",
+        "Node.js",
+        "Java"
+      ]
+    },
+    {
+      "name": "Mobile Development",
+      "keywords": [
+        "Swift",
+        "Objective-C",
+        "Android",
+        "Xamarin"
+      ]
+    },
+    {
+      "name": "Testing",
+      "keywords": [
+        "Mocha",
+        "Jasmine",
+        "NUnit"
+      ]
+    },
+    {
+      "name": "Data Systems",
+      "keywords": [
+        "Realm",
+        "Couchbase",
+        "SQLite",
+        "Postgresql"
+      ]
+    },
+    {
+      "name": "Developmet Tools",
+      "keywords": [
+        "Git",
+        "XCode",
+        "Android Studio",
+        "Visual Studio"
+      ]
+    },
+    {
+      "name": "Project Tools",
+      "keywords": [
+        "Jira",
+        "Kanban",
+        "Slack",
+        "Harvest",
+        "Forecast"
+      ]
+    }
+
+  ],
+  "interests": [
+    {
+      "name": "Video Games",
+      "keywords": [
+        "Dark Souls",
+        "Minecraft"
+      ]
+    },
+    {
+      "name": "Pen & Paper RPGs",
+      "keywords": [
+        "Dungeons & Dragons",
+        "Pathfinder"
+      ]
+    },
+    {
+      "name": "Social Dance",
+      "keywords": [
+        "Rumba",
+        "Swing",
+        "Tango"
+      ]
+    }
+  ]
+}
