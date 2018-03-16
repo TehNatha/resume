@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Nathan Stier",
-    "label": "Mobile Developer",
+    "label": "Xamarin Developer",
     "email": "nathan.stier@gmail.com",
     "phone": "(608) 212-8177",
     "website": "http://tehnatha.com",
-    "summary": "Nathan Stier is an Android in Portland, OR with 4 years if mobile development experience including Xamrin cross-platform development.",
+    "summary": "Nathan Stier is a Xamarin mobile developer in Portland, OR with 4 years of experience with the Android platform.",
     "location": {
       "address": "111 NE 6th Ave #416",
       "postalCode": "97232",
@@ -42,6 +42,11 @@
         "network": "LinkedIn",
         "username": "NathanStier",
         "url": "http://www.linkedin.com/in/nathanstier"
+      },
+      {
+        "network": "Exercism.io",
+        "username": "TehNatha",
+        "url": "http://exercism.io/profiles/TehNatha/8efcc039cc2343e3a550da9fa884fe23"
       }
     ]
   },
@@ -52,13 +57,14 @@
       "website": "http://soliddigital.com",
       "startDate": "2015-10-12",
       "endDate": "2017-07-07",
-      "summary": "Develop and design native and cross platform mobile applications for a multitude of clients.",
+      "summary": "Develop and design native and cross platform mobile applications with a digital agency.",
       "highlights": [
-        "Developed app to control electrical timers via BLE",
-        "Learned Xamarin cross platform development",
-        "Worked with monthly deadlines and two week sprints",
+        "Developed app in Xamarin for BLE GATT controled electrical timers",
+        "Trained in Xamarin cross platform development on the job",
+        "Implemented CI using Visual Studio App Center",
+        "Provided monthly deliverables and documented progress over sprints working in a team of designers, project managers, and developers",
         "Met specifications for various stakeholders: international, enterprise, and startup",
-        "Worked with designers, project managers, and developers to turn contracts into specifications and storyboards",
+        "Analyzed contracts and provided specifications and storyboards to satisfy them",
         "Developed applacitions in tandem with external teams"
       ]
     },
@@ -82,9 +88,9 @@
       "website": "http://madison.com",
       "startDate": "2013-10-30",
       "endDate": "2015-09-30",
-      "summary": "Develop and maintain applications for both Android and iOS.",
+      "summary": "Sole developer and maintainer for applications for Android.",
       "highlights": [
-        "Sole developer for Android code base",
+        "Assisted with bugs and features in iOS app",
         "Created a Jenkins-based Continuous Deployment system for 50 properties over 2 platforms",
         "Trained peers in GIT best practices",
         "Migrated analytics from Flurry to Google Analytics"
@@ -109,10 +115,11 @@
     {
       "name": "Mobile Development",
       "keywords": [
+        "Xamarin",
         "Android",
+        "FreshMVVM",
         "Swift",
-        "Objective-C",
-        "Xamarin"
+        "Objective-C"
       ]
     },
     {
@@ -127,11 +134,14 @@
       ]
     },
     {
-      "name": "Testing",
+      "name": "Testing and Continuous Integration",
       "keywords": [
+
+        "NUnit",
+        "Visual Studio App Center",
         "Mocha",
         "Jasmine",
-        "NUnit"
+        "Jenkins"
       ]
     },
     {
@@ -148,6 +158,16 @@
         "Couchbase",
         "SQLite",
         "Postgresql"
+      ]
+    },
+    {
+      "name": "Dev Tools",
+      "keywords": [
+        "Visual Studio Mac",
+        "VSCode",
+        "Android Studio",
+        "XCode",
+        "Git"
       ]
     },
     {
