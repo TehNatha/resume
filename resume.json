@@ -89,7 +89,7 @@
       "website": "http://madison.com",
       "startDate": "2013-10-30",
       "endDate": "2015-09-30",
-      "summary": "Sole developer and maintainer for applications for both Android.",
+      "summary": "Sole developer and maintainer for applications for Android.",
       "highlights": [
         "Created a Jenkins-based Continuous Deployment system for 50 properties on Android and iOS each",
         "Trained peers in git best practices",
